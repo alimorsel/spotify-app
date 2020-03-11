@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from "./common/component/Header/Header"
+import Router from "./common/navigation/Router"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+    return (
+        <div style={style.app}>
+            <Header/>
+            <div style={style.wrapContainer}>
+                <div style={style.container}>
+                    <Router/>
+                </div>
+            </div>
+
+        </div>
+    );
 }
 
-export default App;
+const style = {
+    app: {
+        display: "flex",
+        flexDirection: "column",
+        width: "100%",
+        height: "100%",
+    },
+    wrapContainer: {
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+    },
+    container: {
+        display: "flex",
+        width: "90%",
+        height: "100%"
+    }
+}
+
+export default App
+
