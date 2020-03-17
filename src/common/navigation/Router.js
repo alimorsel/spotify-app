@@ -8,10 +8,9 @@ export default class Router extends React.Component {
             <BrowserRouter>
                 <Switch>
                     <Route exact path={RouteConfig.Login.path} component={RouteConfig.Login.component}/>
-                    <Route exact path={RouteConfig.ArtistSearch.path} component={RouteConfig.ArtistSearch.component}/>
-                    <Route exact path={RouteConfig.BrowsingArtist.path}
-                           component={RouteConfig.BrowsingArtist.component}/>
-                    <Route exact path={RouteConfig.BrowsingAlbum.path} component={RouteConfig.BrowsingAlbum.component}/>
+                    <Route path={RouteConfig.ArtistSearch.path} component={RouteConfig.ArtistSearch.component}/>
+                    <Route path={RouteConfig.BrowsingArtist.path} component={RouteConfig.BrowsingArtist.component}/>
+                    <Route path={RouteConfig.BrowsingAlbum.path} component={RouteConfig.BrowsingAlbum.component}/>
                 </Switch>
             </BrowserRouter>
         );

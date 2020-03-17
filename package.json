@@ -19,6 +19,7 @@
     "react-router": "latest",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.0",
+    "react-select": "^3.0.8",
     "react-spotify-login": "^0.9.1",
     "react-star-ratings": "^2.3.0",
     "redux": "^4.0.5"

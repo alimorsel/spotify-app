@@ -9,13 +9,13 @@ export const search = (q) => {
     }
 }
 
-export const artistLoading = (q) => {
+export const artistLoading = (searchParams) => {
 
     return {
         type: ArtistSearchActionType.ARTIST_LOADING,
         payload: {
             isLoading: true,
-            q
+            searchParams
         }
     }
 }

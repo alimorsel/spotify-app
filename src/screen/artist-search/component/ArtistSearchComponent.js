@@ -14,13 +14,8 @@ const ArtistSearchComponent = () => {
     const artistSearchData = useSelector(state => state.artistSearchData)
 
     const onClick = () => {
-        //dispatch(search(artistSearchData.searchParams.q))
 
         if (artistSearchData.searchParams.q) {
-            // history.push({
-            //     pathname: RouteConfig.BrowsingArtist.path,
-            //     q: artistSearchData.searchParams.q
-            // });
             history.push(RouteConfig.BrowsingArtist.path + "?" + stringify(artistSearchData.searchParams));
         } else {
             const errors = {
@@ -30,15 +25,22 @@ const ArtistSearchComponent = () => {
         }
     }
 
+    const onTypeChanged = selectedValues => {
+        artistSearchData.searchParams.type = selectedValues.map(value => value.value).join(",");
+    }
+
     return (
         <div style={style.container}>
 
             <SearchBox
                 error={artistSearchData.errors.search}
+                defaultValue={artistSearchData.searchParams.q}
                 onTextChanged={(e) => {
                     artistSearchData.searchParams.q = e.target.value
                 }}
                 onClick={() => onClick()}
+                onTypeChanged={e => onTypeChanged(e)}
+                selectedSearchType={artistSearchData.searchParams.type}
             />
         </div>
     );

@@ -1,9 +1,10 @@
 import {ArtistSearchActionType} from '../type/ArtistSearchActionType'
+import {SearchType} from "../const/SearchType";
 
 const initialState = {
     searchParams: {
         q: "",
-        type: "artist"
+        type: SearchType.ARTIST
     },
     isLoading: false,
     artists: [],
@@ -14,24 +15,12 @@ const initialState = {
 
 const ArtistSearchReducer = (state = initialState, action) => {
     switch (action.type) {
-        case ArtistSearchActionType.SEARCH :
-            return {
-                ...state,
-                searchParams: {
-                    ...state.searchParams,
-                    q: action.payload.q
-                },
-                errors: {
-                    search: null
-                }
-            };
         case ArtistSearchActionType.ARTIST_LOADING:
             return {
                 ...state,
                 isLoading: action.payload.isLoading,
                 searchParams: {
-                    ...state.searchParams,
-                    q: action.payload.q
+                    ...action.payload.searchParams
                 },
                 errors: {
                     search: null

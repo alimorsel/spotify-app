@@ -3,11 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="11119936-89a2-489b-8ae3-aa045c94976a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screen/artist-search/const/SearchType.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/navigation/RouteConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/navigation/RouteConfig.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/navigation/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/navigation/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/artist-search/action/ArtistSearchAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/action/ArtistSearchAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/artist-search/component/ArtistSearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/component/ArtistSearchComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screen/artist-search/component/BrowsingArtistComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/component/BrowsingArtistComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screen/browsing-album/component/BrowsingAlbumComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/browsing-album/component/BrowsingAlbumComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/artist-search/component/common/SearchBoxComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/component/common/SearchBoxComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/artist-search/reducer/ArtistSearchReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/reducer/ArtistSearchReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +92,7 @@
       <updated>1583536010192</updated>
       <workItem from="1583536024537" duration="1385000" />
       <workItem from="1583591875875" duration="117578000" />
-      <workItem from="1584452610050" duration="2129000" />
+      <workItem from="1584452610050" duration="8481000" />
     </task>
     <task id="LOCAL-00001" summary="all changes">
       <created>1583946713682</created>
@@ -96,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583946713699</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="pass search parameters to url">
+      <created>1584455059287</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584455059287</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +131,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="all changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="all changes" />
+    <MESSAGE value="pass search parameters to url" />
+    <option name="LAST_COMMIT_MESSAGE" value="pass search parameters to url" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -132,10 +145,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1583677228773" />
-    <state x="375" y="11" key="CommitChangelistDialog2" timestamp="1583947524731">
+    <state x="375" y="11" key="CommitChangelistDialog2" timestamp="1584455055218">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="375" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583947524731" />
+    <state x="375" y="11" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584455055218" />
     <state x="147" y="65" key="DiffContextDialog" timestamp="1583592552495">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -172,6 +185,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584452610132" />
+    <state x="559" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1584455482106">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="559" y="30" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1584455482106" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1583771397403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

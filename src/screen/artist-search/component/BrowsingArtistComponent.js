@@ -32,16 +32,16 @@ const BrowsingArtistComponent = (props) => {
         const searchParams = parse(props.location.search);
 
         if (searchParams && searchParams.q)
-            dispatch(artistLoading(searchParams.q));
+            dispatch(artistLoading(searchParams));
         else
             history.push(RouteConfig.ArtistSearch.path)
 
     }, [])
 
     const onClick = () => {
-        if (artistSearchData.searchParams.q)
-            dispatch(artistLoading(artistSearchData.searchParams.q));
-        else {
+        if (artistSearchData.searchParams.q) {
+            dispatch(artistLoading(artistSearchData.searchParams));
+        } else {
             const errors = {
                 search: "this field must be not empty"
             }
@@ -57,6 +57,10 @@ const BrowsingArtistComponent = (props) => {
                 artistName
             })
         });
+    }
+
+    const onTypeChanged = selectedValues => {
+        artistSearchData.searchParams.type = selectedValues.map(value => value.value).join(",");
     }
 
     let listArtists = null;
@@ -106,6 +110,8 @@ const BrowsingArtistComponent = (props) => {
                         artistSearchData.searchParams.q = e.target.value
                     }}
                     onClick={() => onClick()}
+                    onTypeChanged={e => onTypeChanged(e)}
+                    selectedSearchType={artistSearchData.searchParams.type}
 
                 />
             </div>
