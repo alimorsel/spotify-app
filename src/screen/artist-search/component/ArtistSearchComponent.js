@@ -4,6 +4,8 @@ import {useHistory} from "react-router-dom";
 import {setErrors} from "../action/ArtistSearchAction";
 import RouteConfig from "../../../common/navigation/RouteConfig"
 import SearchBox from "./common/SearchBoxComponent";
+import {stringify} from 'query-string'
+
 
 const ArtistSearchComponent = () => {
 
@@ -15,10 +17,11 @@ const ArtistSearchComponent = () => {
         //dispatch(search(artistSearchData.searchParams.q))
 
         if (artistSearchData.searchParams.q) {
-            history.push({
-                pathname: RouteConfig.BrowsingArtist.path,
-                q: artistSearchData.searchParams.q
-            });
+            // history.push({
+            //     pathname: RouteConfig.BrowsingArtist.path,
+            //     q: artistSearchData.searchParams.q
+            // });
+            history.push(RouteConfig.BrowsingArtist.path + "?" + stringify(artistSearchData.searchParams));
         } else {
             const errors = {
                 search: "this field must be not empty"

@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11119936-89a2-489b-8ae3-aa045c94976a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/artist-search/component/ArtistSearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/component/ArtistSearchComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/artist-search/component/BrowsingArtistComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/artist-search/component/BrowsingArtistComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screen/browsing-album/component/BrowsingAlbumComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/screen/browsing-album/component/BrowsingAlbumComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/screen/browsing-album" />
@@ -81,6 +87,7 @@
       <updated>1583536010192</updated>
       <workItem from="1583536024537" duration="1385000" />
       <workItem from="1583591875875" duration="117578000" />
+      <workItem from="1584452610050" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="all changes">
       <created>1583946713682</created>
@@ -100,7 +107,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -135,22 +144,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583946953561" />
-    <state width="746" height="210" key="GridCell.Tab.0.bottom" timestamp="1583947339422">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1584453612536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583947339422" />
-    <state width="746" height="210" key="GridCell.Tab.0.center" timestamp="1583947339422">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584453612536" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1584453612536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583947339422" />
-    <state width="746" height="210" key="GridCell.Tab.0.left" timestamp="1583947339422">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584453612536" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1584453612536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583947339422" />
-    <state width="746" height="210" key="GridCell.Tab.0.right" timestamp="1583947339422">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584453612536" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1584453612536">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="746" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583947339422" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584453612536" />
     <state x="349" y="158" key="IDE.errors.dialog" timestamp="1583895694538">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -159,10 +168,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="148" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583947546489" />
-    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1583947490087">
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1584452610132">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1583947490087" />
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1584452610132" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1583771397403">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -182,7 +191,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/common/environment/Color.js</url>
           <line>3</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

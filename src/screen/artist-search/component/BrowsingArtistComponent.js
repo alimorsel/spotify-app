@@ -9,6 +9,7 @@ import {css, StyleSheet} from 'aphrodite';
 import Loader from 'react-loader-spinner'
 import Color from "../../../common/environment/Color";
 import StarRatings from 'react-star-ratings';
+import {parse, stringify} from 'query-string'
 
 const BrowsingArtistComponent = (props) => {
 
@@ -26,11 +27,12 @@ const BrowsingArtistComponent = (props) => {
                 console.log(error)
             })
     }
-
     useEffect(() => {
 
-        if (artistSearchData.searchParams.q)
-            dispatch(artistLoading(props.location.q ? props.location.q : artistSearchData.searchParams.q));
+        const searchParams = parse(props.location.search);
+
+        if (searchParams && searchParams.q)
+            dispatch(artistLoading(searchParams.q));
         else
             history.push(RouteConfig.ArtistSearch.path)
 
@@ -50,8 +52,10 @@ const BrowsingArtistComponent = (props) => {
     const onItemClick = (artistId, artistName) => {
         history.push({
             pathname: RouteConfig.BrowsingAlbum.path,
-            artistId,
-            artistName
+            search: stringify({
+                artistId,
+                artistName
+            })
         });
     }
 

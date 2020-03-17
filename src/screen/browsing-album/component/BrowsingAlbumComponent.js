@@ -7,6 +7,7 @@ import Loader from 'react-loader-spinner'
 import Color from "../../../common/environment/Color";
 import {useHistory} from "react-router-dom";
 import RouteConfig from "../../../common/navigation/RouteConfig";
+import {parse} from 'query-string'
 
 const BrowsingAlbumComponent = (props) => {
 
@@ -25,9 +26,11 @@ const BrowsingAlbumComponent = (props) => {
     }
 
     useEffect(() => {
-        console.log(props)
-        if (props.location.artistId && props.location.artistName)
-            dispatch(artistAlbumLoading(props.location.artistId, props.location.artistName))
+
+        const searchParams = parse(props.location.search);
+
+        if (searchParams.artistId && searchParams.artistName)
+            dispatch(artistAlbumLoading(searchParams.artistId, searchParams.artistName))
         else
             history.push(RouteConfig.ArtistSearch.path);
     }, []);
